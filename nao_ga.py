@@ -173,11 +173,7 @@ if __name__ == '__main__':
     # set up actor molecules here
     molecules_array = []
     for i in range(0,config.pop_size):
-        # molecules_array.append(SMMActorMolecule(memory,atoms,nao_mem_global,bmf_global))
-        # molecules_array.append(OSCMolecule(memory,atoms,nao_mem_global,bmf_global))
-        # molecules_array.append(NAOActorMolecule(memory,atoms,nao_mem_global,bmf_global))
-        # molecules_array.append(FernandoMolecule(memory,atoms,nao_mem_global,bmf_global))
-        molecules_array.append(SHCLtMolecule(memory,atoms,nao_mem_global,bmf_global))
+        molecules_array.append(SMMActorMolecule(memory,atoms,nao_mem_global,bmf_global))
     ga = NaoIslandGA(games_array,memory,nao_mem_global,bmf_global,molecules_array)
     if task == "run_ga":
         ga.run_ga()

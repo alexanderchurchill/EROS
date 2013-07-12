@@ -89,32 +89,3 @@ if __name__ == '__main__':
             ga.assess_fitness(molecule,games_array[0])
     else:
         print "no task specified: must either be run_ga or \"play_molecule <path to molecule>\""
-    # ga.assess_fitness(molecules_array[0],games_array[0])
-    # sensor = [a for a in molecules_array[0].get_atoms_as_list() if a.type == "sensory"][0]
-    # sensor.active = True
-    # sensor.act()
-    # motor = [a for a in molecules_array[0].get_atoms_as_list() if a.type == "motor"][0]
-    # motor.active = True
-    # # arduino_interface.move_servo(0,20)
-    # motor.act()
-    # sensor.act()
-    # motor.act()
-    # motor.act()
-    # # for i in range(0,10):
-    # #     sensor.act()
-    # #     motor.act()
-    # arduino_interface.get_sensor_value(1)
-    # arduino_interface.get_sensor_value(2)
-    # # arduino_interface.move_servo(0,20)
-    # # time.sleep(1)
-    # # arduino_interface.get_sensor_value(0)
-    # # arduino_interface.get_sensor_value(1)
-    # # arduino_interface.get_sensor_value(2)
-    # # arduino_interface.move_servo(0,21)
-    # # time.sleep(1)
-    # # arduino_interface.get_sensor_value(0)
-    # # arduino_interface.get_sensor_value(1)
-    # # arduino_interface.get_sensor_value(2)
-    # # arduino_interface.move_servo(0,22)
-    # # time.sleep(1)
-
